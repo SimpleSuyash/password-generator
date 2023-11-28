@@ -1,0 +1,62 @@
+:root{
+    
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+--fs-main: calc(1vw + 0.3rem);
+--fs-h1: 1.5em;
+--fs-h2: 1.4em;
+--fs-button: 1.3em;
+}
+
+main{
+    font-size: var(--fs-main);
+    width: 80%;
+    margin-inline: auto;
+    margin-block: 3em;
+    padding: 1rem;
+    /* height: 500px; */
+    border: 2px solid #000 ;
+    background-color: #fefefe;
+    text-align: center;
+}
+main h1{
+    font-size: var(--fs-h1);
+}
+.form{
+    background-color: #fff;
+    padding-inline: 2rem;
+    padding-top: 2rem;
+    /* padding-block: 2em; */
+    /* offset-x, y, blur, spread, color */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 0.3rem;
+    
+}
+.form h2{
+    text-align: start;
+    margin-bottom: 1rem;
+    font-size:var(--fs-h2);
+}
+.output-container{
+    border-block: 1px solid lightgrey;
+    padding-block: 0.5rem;
+}
+#display-output{
+    min-height: 20vw;
+    width: 100%;
+    border: 1px dashed #030001;
+    border-radius: 0.3rem;
+    padding-block: 1rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+button{
+    
+    background-color: brown;
+    padding-block: 0.5rem;
+    padding-inline: 1.5rem;
+    border-radius: 2rem;
+    color: #fff;
+    margin-block: 1rem;
+    border-style: none;
+    font-size: var(--fs-button);
+}
