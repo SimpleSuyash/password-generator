@@ -5,6 +5,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
 --fs-h1: 1.5em;
 --fs-h2: 1.4em;
 --fs-button: 1.3em;
+--fs-output: 1.2em;
 }
 
 main{
@@ -21,7 +22,7 @@ main{
 main h1{
     font-size: var(--fs-h1);
 }
-.form{
+form{
     background-color: #fff;
     padding-inline: 2rem;
     padding-top: 2rem;
@@ -29,9 +30,10 @@ main h1{
     /* offset-x, y, blur, spread, color */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 0.3rem;
+  
     
 }
-.form h2{
+legend{
     text-align: start;
     margin-bottom: 1rem;
     font-size:var(--fs-h2);
@@ -41,6 +43,7 @@ main h1{
     padding-block: 0.5rem;
 }
 #display-output{
+    display: block;
     min-height: 20vw;
     width: 100%;
     border: 1px dashed #030001;
@@ -51,7 +54,7 @@ main h1{
 
 button{
     
-    background-color: brown;
+    background-color: rgb(166, 43, 43);
     padding-block: 0.5rem;
     padding-inline: 1.5rem;
     border-radius: 2rem;
@@ -59,4 +62,19 @@ button{
     margin-block: 1rem;
     border-style: none;
     font-size: var(--fs-button);
+}
+button:hover{
+    background-color: rgb(166, 43, 43, 0.8);
+    cursor: pointer;
+}
+fieldset{
+    border: none;
+}
+input{
+    display: block;
+    margin: 10% auto;
+    font-size: var(--fs-output);
+}
+input:active{
+    user-select: all;
 }
