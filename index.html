@@ -13,16 +13,22 @@
         <header>
             <h1>Password Generator</h1>
         </header>
-        <div class="form">
-            <h2>Generate a Password</h2>
-            <div class="output-container">
-                <div id="display-output">
-                    Your Secure Password
+        <form>
+            <fieldset>
+                <legend>Generate a Password</legend>
+                <div class="output-container">
+                    <output id="display-output">
+                        Your Secure Password
+                        <input type="text" id="password" readonly>
+
+                        
+                    </output>
                 </div>
-            </div>
- 
-            <button type="button">Generate Password</button>
-        </div>
+     
+                <button type="button" onclick="showPrompts()">Generate Password</button>
+            </fieldset>
+
+        </form>
     </main>
 
 
