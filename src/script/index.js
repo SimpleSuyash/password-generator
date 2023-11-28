@@ -1,22 +1,77 @@
+const Alphabet_length=26;
 const btnPassword = document.querySelector("button");
+const symbols = [..."~`!@#$%^&*()_-+={[}]|\:;\"'<,>.?/"];
+const ucaseAlphabets = createUppercaseAlphabets();
+const lcaseAlphabets = createLowercaseAlphabets();
+const digits = createDigits();
+
 let pwLength = 0;
 let includeLower, includeUpper, includeNumeric, includeSpecial;
-let msg = " Please enter a whole number between 8 to 128 for password length."
+
+
+window.onload = function(){
+    createUppercaseAlphabets();
+    createLowercaseAlphabets();
+    createDigits();
+}
+
+/*
+returns an array of the alphabets in between A and B
+two alphabets charcode is converted, and the rest of the characters are populated 
+with the consecutive charcode, 
+and finally all are converted to equivalent string/character 
+*/
+function createUppercaseAlphabets() {
+    let alphabets = [];
+    
+    let i = "A".charCodeAt(0);//=65
+    let j = "Z".charCodeAt(0);//=90
+    //(i=65, j=90; i <= j; i++)
+    for ( ; i <= j; i++){
+        //from charcode gives a string/alphabet
+        alphabets.push(String.fromCharCode(i));
+    }
+    console.log(alphabets);
+    
+    return alphabets;
+   
+}
+function createLowercaseAlphabets(){
+    let alphabets = [];
+    const indexes = Array.from(Array(26)).map((value, index) => index + 97);
+    alphabets = indexes.map(charcode => String.fromCharCode(charcode));
+    console.log(alphabets);
+    return alphabets;
+
+}
+
+function createDigits(){
+    let digits;
+    //length: 10 object, output index ,i.e 0 -9
+    digits = Array.from({length: 10}, (value, index) => index);
+    console.log(digits);
+    return digits;
+}
+
+
+
 
 function showPrompts(){
-    pwLength = askPWLength();
-    includeLower = confirmation("lower");
-    includeUpper = confirmation("upper");
-    includeNumeric = confirmation("numeric");
-    includeSpecial = confirmation("special");
-
-    confirm("Password length is " + pwLength +
-            " Lowercase: " + includeLower +
-            " Uppercase: " + includeUpper +
-            " Numeric: " + includeNumeric +
-            " Special: " + includeSpecial 
+    createUppercaseAlphabets("A", "Z");
     
-    );
+    // pwLength = askPWLength();
+    // includeLower = confirmation("lower");
+    // includeUpper = confirmation("upper");
+    // includeNumeric = confirmation("numeric");
+    // includeSpecial = confirmation("special");
+
+    // confirm("Password length is " + pwLength +
+    //         " Lowercase: " + includeLower +
+    //         " Uppercase: " + includeUpper +
+    //         " Numeric: " + includeNumeric +
+    //         " Special: " + includeSpecial 
+    
+    // );
 }
 
 function askPWLength(){
@@ -35,6 +90,7 @@ function askPWLength(){
 function validateLength(input){
     
     let isNumber = false;
+    let msg = " Please enter a whole number between 8 to 128 for password length.";
 
     if(input.trim().length == 0){
         //when empty value enterd
