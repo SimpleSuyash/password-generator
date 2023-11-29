@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./src/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="./src/css/style.css">
+    <link rel="stylesheet" type="text/css" href ="./src/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href ="./src/css/style.css">
+    <link rel="shortcut icon" href="#">
     <title>Password Generator</title>
 </head>
 <body>
@@ -16,16 +17,17 @@
         <form>
             <fieldset>
                 <legend>Generate a Password</legend>
-                <div class="output-container">
-                    <output id="display-output">
+                <div class = "output-container">
+                    <output id = "output">
                         Your Secure Password
-                        <input type="text" id="password" readonly>
+                        
+                        <textarea id = "password" onclick = "this.select()" readonly></textarea>
 
                         
                     </output>
                 </div>
      
-                <button type="button" onclick="showPrompts()">Generate Password</button>
+                <button type = "button" onclick = "generatePassword()">Generate Password</button>
             </fieldset>
 
         </form>
@@ -33,6 +35,6 @@
 
 
 
-    <script  type="text/javascript" src="./src/script/index.js"></script>
+    <script  type = "text/javascript" src = "./src/script/index.js"></script>
 </body>
 </html>

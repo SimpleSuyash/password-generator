@@ -5,7 +5,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
 --fs-h1: 1.5em;
 --fs-h2: 1.4em;
 --fs-button: 1.3em;
---fs-output: 1.2em;
+--fs-output: 1.1em;
 }
 
 main{
@@ -42,7 +42,7 @@ legend{
     border-block: 1px solid lightgrey;
     padding-block: 0.5rem;
 }
-#display-output{
+#output{
     display: block;
     min-height: 20vw;
     width: 100%;
@@ -70,11 +70,14 @@ button:hover{
 fieldset{
     border: none;
 }
-input{
-    display: block;
-    margin: 10% auto;
+textarea{
     font-size: var(--fs-output);
+    margin: 10% auto;
+    text-align: center;
+    padding-block: 2rem;
+    width: 90%;
+    background-color: rgba(70, 58, 62, 0.2);
+    border: none;
+    border-style: inset;
 }
-input:active{
-    user-select: all;
-}
+
