@@ -7,13 +7,13 @@ The Random Password Generator generates a new random password everytime a user p
 ![image](./assets/image/screenshot-PW-generator.png)
 
 All the code written in the program is mine, however, the 'normalize.css' is from the following source:  
+
  http://meyerweb.com/eric/tools/css/reset/
- 
+
  v2.0 | 20110126
- 
+
  License: none (public domain)
  
-
 ##How to use
 
 Copy the repository in your local machine. Then simply open the 'index.html' page. It opens a very simple for with a button to generate password and a textarea to display the generated password. The user input is disabled for the textarea.
@@ -36,9 +36,14 @@ If you wish to make the program more user friendly and sophisticated, the user i
 
 For sake of learning, the list of uppercase, lowercase alphabets, numbers and special characters are each populated/created through different methods such as Array spread, map etc. Array spread method would have been suffice, otherwise.
 
+
+##Screenshot
+
+=======
 ![image](./assets/image/confirm-box.png)
 
 ##Screenshot   
+
 Screenshot showing password that including all charcters
 ---
 ![image](./assets/image/screenshot1.png)
@@ -48,5 +53,6 @@ Screenshot showing a password with lower and uppercase characters that is 50 cha
 ![image](./assets/image/screenshot2.png)
 
 
-##Link to deployed application   
+##Link to deployed application    
+  
 [Link to Random Password Generator](https://simplesuyash.github.io/password-generator/)
