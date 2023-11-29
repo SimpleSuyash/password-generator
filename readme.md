@@ -24,11 +24,16 @@ Firstly, when the button is pressed, the program will ask for the desired number
 -less that 8 
 -greater that 128
 -empty value
-If the value entered does not match the criteria, it will ask for the value again through those prompt/confirm dialog boxes. However, if the user press the "Cancel" but this time, the whole program will terminate without any response. Whenever a user want to generate a password again, the 'Generate Password' button has to be pressed again. 
 
  ![image](./assets/image/prompt-box.png) 
 
+
+If the value entered does not match the criteria, it will ask for the value again through those prompt/confirm dialog boxes. However, if the user press the "Cancel" but this time, the whole program will terminate without any response. Whenever a user want to generate a password again, the 'Generate Password' button has to be pressed again. 
+
 To include or not the lowercase characters, uppercase characters, numbers and special characters, users are asked for the input through the 'Confirm' dialog boxes. Pressing 'Ok' means to include the type, whereas pressing 'Cancel' means to not include the type.
+
+![image](./assets/image/confirm-box.png)
+
 
 When all the user input are correct and collected, the program displays the randomly generated password in a textarea inside a form. 
 
@@ -37,22 +42,21 @@ If you wish to make the program more user friendly and sophisticated, the user i
 For sake of learning, the list of uppercase, lowercase alphabets, numbers and special characters are each populated/created through different methods such as Array spread, map etc. Array spread method would have been suffice, otherwise.
 
 
+
 ##Screenshot
 
-=======
-![image](./assets/image/confirm-box.png)
-
-##Screenshot   
-
 Screenshot showing password that including all charcters
----
+* * *
+
 ![image](./assets/image/screenshot1.png)
 
+
 Screenshot showing a password with lower and uppercase characters that is 50 char long
----
+* * *
+
 ![image](./assets/image/screenshot2.png)
 
 
 ##Link to deployed application    
-  
+
 [Link to Random Password Generator](https://simplesuyash.github.io/password-generator/)
