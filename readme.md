@@ -3,10 +3,14 @@
 ##Description
 
 The Random Password Generator generates a new random password everytime a user press a Generate Password button. This program is a very simple and unsophiticated where all the user inputs are collected through 'Confirm' and 'Prompt' boxes when a user click 'Generate Password' button.. It uses **HTML, CSS and JavaScript** only. This program was created as a part of assignment while doing a bootcamp at Sydney University, NSW as to have my HTML, CSS, JavaScript skill assessed.
+
 ![image](./assets/image/screenshot-PW-generator.png)
+
 All the code written in the program is mine, however, the 'normalize.css' is from the following source:  
  http://meyerweb.com/eric/tools/css/reset/
+
  v2.0 | 20110126
+
  License: none (public domain)
  
 
@@ -32,6 +36,7 @@ If you wish to make the program more user friendly and sophisticated, the user i
 For sake of learning, the list of uppercase, lowercase alphabets, numbers and special characters are each populated/created through different methods such as Array spread, map etc. Array spread method would have been suffice, otherwise.
 
 ##Screenshot
+
 Screenshot showing password that including all charcters
 ---
 ![image](./assets/image/screenshot1.png)
@@ -41,5 +46,6 @@ Screenshot showing a password with lower and uppercase characters that is 50 cha
 ![image](./assets/image/screenshot2.png)
 
 
-##Link to deployed application   
+##Link to deployed application    
+  
 [Link to Random Password Generator](https://simplesuyash.github.io/password-generator/)
