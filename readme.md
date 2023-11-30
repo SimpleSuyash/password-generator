@@ -16,14 +16,14 @@ All the code written in the program is mine, however, the 'normalize.css' is fro
  
 ## How to use
 
-Copy the repository in your local machine. Then simply open the 'index.html' page. It opens a very simple form with a button in itgit  to generate password and a textarea to display the generated password. The user input is disabled for the textarea.
+Copy the repository in your local machine. Then simply open the 'index.html' page. It opens a very simple form with a button in it to generate a password, and a textarea to display the generated password. The user input is disabled for the textarea, however, the value in the textarea can be selected just clicking on it.
 
-Firstly, when the button is pressed, the program will ask for the desired number of characters for a new random password. The criteria for the length of password is 8 characters minimum and 128 characters maximum. It informs this criteria to the user through those prompt/confirm boxes when asking for the user input. The user input for the length of the password is validated against several criteria. 
-* If the input is not a number
-* a whole number or not
-* less that 8 
-* greater that 128
-* empty value
+First, when the button is pressed, the program will ask for the desired number of characters for a new random password. The criteria for the length of password is 8 characters minimum and 128 characters maximum. It informs this criteria to the user through those prompt/confirm boxes when asking for the user input. The user input for the length of the password is validated against several criteria. 
+* Is it a number?
+* Is it a whole number?
+* Is it < 8 ?
+* Is it > 128?
+* Is it an empty value?
 
  ![image](./assets/image/prompt-box.png) 
 
@@ -39,7 +39,7 @@ When all the user correct inputs are collected, the program displays the randoml
 
 If you wish to make this program more user friendly and sophisticated, the user inputs could be collected through other more appropriate html elements, such as range slider for password length, checkboxes for character types etc in the form.
 
-For the sake of learning, the list of uppercase, lowercase alphabets, numbers and special characters are each populated/created through different methods such as Array spread, from etc. The Array spread method would have been suffice, otherwise.
+For the sake of learning, the list of uppercase, lowercase alphabets, numbers and special characters are each populated/created through different methods such as 'Array Spread', 'Array.from' etc. The Array spread method would have been suffice, otherwise.
 
 
 
