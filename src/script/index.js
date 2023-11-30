@@ -1,6 +1,6 @@
 
 
-const symbols = [..."~`!@#$%^&*()_-+={[}]|\:;\"'<,>.?/"];
+const symbols = [..."!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"];
 const ucaseAlphabets = populateUppercaseArray();
 const lcaseAlphabets = populateLowercaseArray();
 const digits = populateDigitArray();
